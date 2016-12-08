@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Projet Lecteur Multimedia:  Fichier source de src/audio.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet Lecteur Multimedia
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">audio.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="audioInterfaceFactory_8hpp.html">AbstractFactory/audioInterfaceFactory.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Dir_8hpp.html">Dir/Dir.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;SFML/Audio.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;TGUI/TGUI.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;sfeMovie/Movie.hpp&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="etatA_8hpp.html">StateAudio/etatA.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="etatArretA_8hpp.html">StateAudio/etatArretA.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="etatLectureA_8hpp.html">StateAudio/etatLectureA.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="etatPauseA_8hpp.html">StateAudio/etatPauseA.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classAudio.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAudio.html">Audio</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classInterface.html">Interface</a> _i;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classDir.html">Dir</a> _dir;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classEtatA.html">EtatA</a>* _etatCourant;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classEtatArretA.html">EtatArretA</a> _etatArret;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classEtatLectureA.html">EtatLectureA</a> _etatLecture;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classEtatPauseA.html">EtatPauseA</a> _etatPause;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classAudio.html#acce28b8dbf321b14405f2ccd244dc4b5">Audio</a>(<a class="code" href="classAudioInterfaceFactory.html">AudioInterfaceFactory</a>* aiFact);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classAudio.html#ae8f54deecb5f48511aaab469e80294d6">~Audio</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAudio.html#ae2e9ae249650dbce7d4a3511dda53a55">afficher</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAudio.html#ab4cb3dc5718af3ea91d12b8b54038741">run</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classEtatA.html">EtatA</a>* <a class="code" href="classAudio.html#abc78969597e0e29936687e5bd492afa5">getEtatCourant</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classEtatLectureA.html">EtatLectureA</a>* <a class="code" href="classAudio.html#a18a93b2599ee62c410a14d24616aa7ea">getEtatLecture</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="classEtatPauseA.html">EtatPauseA</a>* <a class="code" href="classAudio.html#acef026681c15335e45892950223f9f32">getEtatPause</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="classEtatArretA.html">EtatArretA</a>* <a class="code" href="classAudio.html#a38d8b4444ff8a9ccf04a5d97e1690718">getEtatArret</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAudio.html#a8b51ce7751d78af0f73c561940ccb3be">setEtat</a>(<a class="code" href="classEtatA.html">EtatA</a>* ea);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAudio.html#a78fc68f0aff8192938eb49edfaa0e003">utiliserBoutonLecture</a>(sf::Sound* sound);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAudio.html#a33bb2b93eea04897c9640022a8267418">utiliserBoutonStop</a>(sf::Sound* sound);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classAudio.html#a4fc8d00c5a7b938a478f4999e2066c9c">utiliserBoutonPause</a>(sf::Sound* sound);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="ttc" id="etatPauseA_8hpp_html"><div class="ttname"><a href="etatPauseA_8hpp.html">etatPauseA.hpp</a></div><div class="ttdoc">Classe EtatPauseA, qui implémente les méthodes applicables à un audio dans l&#39;état pause...</div></div>
+<div class="ttc" id="classAudioInterfaceFactory_html"><div class="ttname"><a href="classAudioInterfaceFactory.html">AudioInterfaceFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="audioInterfaceFactory_8hpp_source.html#l00017">audioInterfaceFactory.hpp:17</a></div></div>
+<div class="ttc" id="etatA_8hpp_html"><div class="ttname"><a href="etatA_8hpp.html">etatA.hpp</a></div><div class="ttdoc">Classe EtatA (abstraite), contenant les méthodes applicables à un audio. </div></div>
+<div class="ttc" id="classEtatArretA_html"><div class="ttname"><a href="classEtatArretA.html">EtatArretA</a></div><div class="ttdef"><b>Definition:</b> <a href="etatArretA_8hpp_source.html#l00014">etatArretA.hpp:14</a></div></div>
+<div class="ttc" id="classAudio_html_a38d8b4444ff8a9ccf04a5d97e1690718"><div class="ttname"><a href="classAudio.html#a38d8b4444ff8a9ccf04a5d97e1690718">Audio::getEtatArret</a></div><div class="ttdeci">EtatArretA * getEtatArret()</div><div class="ttdoc">Accesseur EtatArret. </div></div>
+<div class="ttc" id="etatArretA_8hpp_html"><div class="ttname"><a href="etatArretA_8hpp.html">etatArretA.hpp</a></div><div class="ttdoc">Classe EtatArretA, qui implémente les méthodes applicables à un audio dans l&#39;état arret...</div></div>
+<div class="ttc" id="classAudio_html_a8b51ce7751d78af0f73c561940ccb3be"><div class="ttname"><a href="classAudio.html#a8b51ce7751d78af0f73c561940ccb3be">Audio::setEtat</a></div><div class="ttdeci">void setEtat(EtatA *ea)</div><div class="ttdoc">Mutateur Etat. </div></div>
+<div class="ttc" id="audioInterfaceFactory_8hpp_html"><div class="ttname"><a href="audioInterfaceFactory_8hpp.html">audioInterfaceFactory.hpp</a></div><div class="ttdoc">Classe AudioInterfaceFactory, utilisé pour la création de l&#39;interface lors de la lecture d&#39;un fichier...</div></div>
+<div class="ttc" id="classAudio_html_ab4cb3dc5718af3ea91d12b8b54038741"><div class="ttname"><a href="classAudio.html#ab4cb3dc5718af3ea91d12b8b54038741">Audio::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">lance l&#39;audio et permet a l&#39;utilisateur d&#39;effectuer des actions dessus. </div></div>
+<div class="ttc" id="classEtatPauseA_html"><div class="ttname"><a href="classEtatPauseA.html">EtatPauseA</a></div><div class="ttdef"><b>Definition:</b> <a href="etatPauseA_8hpp_source.html#l00014">etatPauseA.hpp:14</a></div></div>
+<div class="ttc" id="classAudio_html_a78fc68f0aff8192938eb49edfaa0e003"><div class="ttname"><a href="classAudio.html#a78fc68f0aff8192938eb49edfaa0e003">Audio::utiliserBoutonLecture</a></div><div class="ttdeci">void utiliserBoutonLecture(sf::Sound *sound)</div><div class="ttdoc">selon l&#39;état passe l&#39;audio dans l&#39;état lecture </div></div>
+<div class="ttc" id="classAudio_html_acef026681c15335e45892950223f9f32"><div class="ttname"><a href="classAudio.html#acef026681c15335e45892950223f9f32">Audio::getEtatPause</a></div><div class="ttdeci">EtatPauseA * getEtatPause()</div><div class="ttdoc">Accesseur EtatPause. </div></div>
+<div class="ttc" id="classAudio_html_abc78969597e0e29936687e5bd492afa5"><div class="ttname"><a href="classAudio.html#abc78969597e0e29936687e5bd492afa5">Audio::getEtatCourant</a></div><div class="ttdeci">EtatA * getEtatCourant()</div><div class="ttdoc">Accesseur EtatCourant. </div></div>
+<div class="ttc" id="classAudio_html_a18a93b2599ee62c410a14d24616aa7ea"><div class="ttname"><a href="classAudio.html#a18a93b2599ee62c410a14d24616aa7ea">Audio::getEtatLecture</a></div><div class="ttdeci">EtatLectureA * getEtatLecture()</div><div class="ttdoc">Accesseur EtatLecture. </div></div>
+<div class="ttc" id="classAudio_html_acce28b8dbf321b14405f2ccd244dc4b5"><div class="ttname"><a href="classAudio.html#acce28b8dbf321b14405f2ccd244dc4b5">Audio::Audio</a></div><div class="ttdeci">Audio(AudioInterfaceFactory *aiFact)</div><div class="ttdoc">Constructeur. </div></div>
+<div class="ttc" id="classInterface_html"><div class="ttname"><a href="classInterface.html">Interface</a></div><div class="ttdef"><b>Definition:</b> <a href="interface_8hpp_source.html#l00017">interface.hpp:17</a></div></div>
+<div class="ttc" id="classAudio_html_ae8f54deecb5f48511aaab469e80294d6"><div class="ttname"><a href="classAudio.html#ae8f54deecb5f48511aaab469e80294d6">Audio::~Audio</a></div><div class="ttdeci">~Audio()</div><div class="ttdoc">Destructeur. </div></div>
+<div class="ttc" id="classEtatA_html"><div class="ttname"><a href="classEtatA.html">EtatA</a></div><div class="ttdef"><b>Definition:</b> <a href="etatA_8hpp_source.html#l00015">etatA.hpp:15</a></div></div>
+<div class="ttc" id="etatLectureA_8hpp_html"><div class="ttname"><a href="etatLectureA_8hpp.html">etatLectureA.hpp</a></div><div class="ttdoc">Classe EtatLectureA, qui implémente les méthodes applicables à un audio dans l&#39;état lecture...</div></div>
+<div class="ttc" id="classAudio_html_a4fc8d00c5a7b938a478f4999e2066c9c"><div class="ttname"><a href="classAudio.html#a4fc8d00c5a7b938a478f4999e2066c9c">Audio::utiliserBoutonPause</a></div><div class="ttdeci">void utiliserBoutonPause(sf::Sound *sound)</div><div class="ttdoc">selon l&#39;etat, effectue l&#39;action du bouttonpause </div></div>
+<div class="ttc" id="classAudio_html_ae2e9ae249650dbce7d4a3511dda53a55"><div class="ttname"><a href="classAudio.html#ae2e9ae249650dbce7d4a3511dda53a55">Audio::afficher</a></div><div class="ttdeci">void afficher()</div><div class="ttdoc">fonction de test de création </div></div>
+<div class="ttc" id="classDir_html"><div class="ttname"><a href="classDir.html">Dir</a></div><div class="ttdef"><b>Definition:</b> <a href="Dir_8hpp_source.html#l00017">Dir.hpp:17</a></div></div>
+<div class="ttc" id="classAudio_html_a33bb2b93eea04897c9640022a8267418"><div class="ttname"><a href="classAudio.html#a33bb2b93eea04897c9640022a8267418">Audio::utiliserBoutonStop</a></div><div class="ttdeci">void utiliserBoutonStop(sf::Sound *sound)</div><div class="ttdoc">selon l&#39;etat, passe l&#39;audio dans l&#39;état arret </div></div>
+<div class="ttc" id="Dir_8hpp_html"><div class="ttname"><a href="Dir_8hpp.html">Dir.hpp</a></div><div class="ttdoc">Classe Dir , contenant les méthodes pour acceder aux fichiers d&#39;un dossier et les stockants...</div></div>
+<div class="ttc" id="classEtatLectureA_html"><div class="ttname"><a href="classEtatLectureA.html">EtatLectureA</a></div><div class="ttdef"><b>Definition:</b> <a href="etatLectureA_8hpp_source.html#l00013">etatLectureA.hpp:13</a></div></div>
+<div class="ttc" id="classAudio_html"><div class="ttname"><a href="classAudio.html">Audio</a></div><div class="ttdef"><b>Definition:</b> <a href="audio_8hpp_source.html#l00014">audio.hpp:14</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Vendredi 27 Novembre 2015 16:25:54 pour Projet Lecteur Multimedia par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

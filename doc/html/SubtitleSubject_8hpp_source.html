@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Projet Lecteur Multimedia:  Fichier source de src/Observer/SubtitleSubject.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet Lecteur Multimedia
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3cbb56cc7cf13c3bc2f208a0e5e33afe.html">Observer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SubtitleSubject.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="SubtitleSubject_8hpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef SUBTITLESUBJECT_HPP</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define SUBTITLESUBJECT_HPP</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;Subject.hpp&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;sfeMovie/Movie.hpp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classSubtitleSubject.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSubtitleSubject.html">SubtitleSubject</a> : <span class="keyword">public</span> <a class="code" href="classSubject.html">Subject</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        std::vector&lt;Observer*&gt; _list;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        std::string _subtitleLine;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        sfe::Movie *_movie;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        std::string _start;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        std::string _end;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::string _chrono;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>: </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classSubtitleSubject.html#af4cc18f5f05474102ec8ee78649fa42c">SubtitleSubject</a>(sfe::Movie *m);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        std::string <a class="code" href="classSubtitleSubject.html#afcb35a1af34b6b926860d544893ae3c4">getData</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSubtitleSubject.html#aa6b5f86666e26cb2ed6e3a282f7d9ded">setData</a>(std::string l);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classSubtitleSubject.html#afc89e947aab454357dce8ea2f80403ee">addObs</a>(<a class="code" href="classObserver.html">Observer</a>* o);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classSubtitleSubject.html#a60e75a2a34275176aaea81738ee4879d">removeObs</a>(<a class="code" href="classObserver.html">Observer</a>* o);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSubtitleSubject.html#a25a62553e49435e7ff42ded01d825b52">notifyObs</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSubtitleSubject.html#acd31f06174b7b2a984c9b20566d412b8">floatToString</a>(<span class="keywordtype">float</span> i);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="classSubtitleSubject.html#a2d774cd5676e57a53b1f9927de5b9b48">stringToFloat</a>(std::string t);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classSubtitleSubject.html#a4a3626c6f2d2f4d4ca6275db6355d1fa">isDigit</a>(std::string s);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classSubtitleSubject_html_afcb35a1af34b6b926860d544893ae3c4"><div class="ttname"><a href="classSubtitleSubject.html#afcb35a1af34b6b926860d544893ae3c4">SubtitleSubject::getData</a></div><div class="ttdeci">std::string getData()</div><div class="ttdoc">Accesseur. </div></div>
+<div class="ttc" id="classSubtitleSubject_html_a25a62553e49435e7ff42ded01d825b52"><div class="ttname"><a href="classSubtitleSubject.html#a25a62553e49435e7ff42ded01d825b52">SubtitleSubject::notifyObs</a></div><div class="ttdeci">void notifyObs()</div><div class="ttdoc">Notifie l&#39;ensemble des observers ajoutés à au vecteur. </div></div>
+<div class="ttc" id="classSubtitleSubject_html_a4a3626c6f2d2f4d4ca6275db6355d1fa"><div class="ttname"><a href="classSubtitleSubject.html#a4a3626c6f2d2f4d4ca6275db6355d1fa">SubtitleSubject::isDigit</a></div><div class="ttdeci">bool isDigit(std::string s)</div><div class="ttdoc">Test si une chaine de caractère ne contient que des chiffres. </div></div>
+<div class="ttc" id="classSubtitleSubject_html_a2d774cd5676e57a53b1f9927de5b9b48"><div class="ttname"><a href="classSubtitleSubject.html#a2d774cd5676e57a53b1f9927de5b9b48">SubtitleSubject::stringToFloat</a></div><div class="ttdeci">float stringToFloat(std::string t)</div><div class="ttdoc">Modifie un string en float. </div></div>
+<div class="ttc" id="classSubtitleSubject_html_a60e75a2a34275176aaea81738ee4879d"><div class="ttname"><a href="classSubtitleSubject.html#a60e75a2a34275176aaea81738ee4879d">SubtitleSubject::removeObs</a></div><div class="ttdeci">int removeObs(Observer *o)</div><div class="ttdoc">Supprime un Observer. </div></div>
+<div class="ttc" id="classSubtitleSubject_html_af4cc18f5f05474102ec8ee78649fa42c"><div class="ttname"><a href="classSubtitleSubject.html#af4cc18f5f05474102ec8ee78649fa42c">SubtitleSubject::SubtitleSubject</a></div><div class="ttdeci">SubtitleSubject(sfe::Movie *m)</div><div class="ttdoc">Constructeur. </div></div>
+<div class="ttc" id="classObserver_html"><div class="ttname"><a href="classObserver.html">Observer</a></div><div class="ttdef"><b>Definition:</b> <a href="Observer_8hpp_source.html#l00015">Observer.hpp:15</a></div></div>
+<div class="ttc" id="classSubtitleSubject_html_afc89e947aab454357dce8ea2f80403ee"><div class="ttname"><a href="classSubtitleSubject.html#afc89e947aab454357dce8ea2f80403ee">SubtitleSubject::addObs</a></div><div class="ttdeci">int addObs(Observer *o)</div><div class="ttdoc">Ajout un Observer. </div></div>
+<div class="ttc" id="classSubtitleSubject_html_acd31f06174b7b2a984c9b20566d412b8"><div class="ttname"><a href="classSubtitleSubject.html#acd31f06174b7b2a984c9b20566d412b8">SubtitleSubject::floatToString</a></div><div class="ttdeci">void floatToString(float i)</div><div class="ttdoc">Transforme un float en String. </div></div>
+<div class="ttc" id="classSubject_html"><div class="ttname"><a href="classSubject.html">Subject</a></div><div class="ttdef"><b>Definition:</b> <a href="Subject_8hpp_source.html#l00014">Subject.hpp:14</a></div></div>
+<div class="ttc" id="classSubtitleSubject_html_aa6b5f86666e26cb2ed6e3a282f7d9ded"><div class="ttname"><a href="classSubtitleSubject.html#aa6b5f86666e26cb2ed6e3a282f7d9ded">SubtitleSubject::setData</a></div><div class="ttdeci">void setData(std::string l)</div><div class="ttdoc">Accesseur mettant à jour modifiant la data. </div></div>
+<div class="ttc" id="classSubtitleSubject_html"><div class="ttname"><a href="classSubtitleSubject.html">SubtitleSubject</a></div><div class="ttdef"><b>Definition:</b> <a href="SubtitleSubject_8hpp_source.html#l00016">SubtitleSubject.hpp:16</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Vendredi 27 Novembre 2015 16:25:54 pour Projet Lecteur Multimedia par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

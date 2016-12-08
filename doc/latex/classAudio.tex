@@ -1,0 +1,142 @@
+\hypertarget{classAudio}{\section{Référence de la classe Audio}
+\label{classAudio}\index{Audio@{Audio}}
+}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAudio_acce28b8dbf321b14405f2ccd244dc4b5}{Audio} (\hyperlink{classAudioInterfaceFactory}{Audio\+Interface\+Factory} $\ast$ai\+Fact)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hypertarget{classAudio_ae8f54deecb5f48511aaab469e80294d6}{\hyperlink{classAudio_ae8f54deecb5f48511aaab469e80294d6}{$\sim$\+Audio} ()}\label{classAudio_ae8f54deecb5f48511aaab469e80294d6}
+
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hypertarget{classAudio_ae2e9ae249650dbce7d4a3511dda53a55}{void \hyperlink{classAudio_ae2e9ae249650dbce7d4a3511dda53a55}{afficher} ()}\label{classAudio_ae2e9ae249650dbce7d4a3511dda53a55}
+
+\begin{DoxyCompactList}\small\item\em fonction de test de création \end{DoxyCompactList}\item 
+\hypertarget{classAudio_ab4cb3dc5718af3ea91d12b8b54038741}{void \hyperlink{classAudio_ab4cb3dc5718af3ea91d12b8b54038741}{run} ()}\label{classAudio_ab4cb3dc5718af3ea91d12b8b54038741}
+
+\begin{DoxyCompactList}\small\item\em lance l'audio et permet a l'utilisateur d'effectuer des actions dessus. \end{DoxyCompactList}\item 
+\hyperlink{classEtatA}{Etat\+A} $\ast$ \hyperlink{classAudio_abc78969597e0e29936687e5bd492afa5}{get\+Etat\+Courant} ()
+\begin{DoxyCompactList}\small\item\em Accesseur Etat\+Courant. \end{DoxyCompactList}\item 
+\hyperlink{classEtatLectureA}{Etat\+Lecture\+A} $\ast$ \hyperlink{classAudio_a18a93b2599ee62c410a14d24616aa7ea}{get\+Etat\+Lecture} ()
+\begin{DoxyCompactList}\small\item\em Accesseur Etat\+Lecture. \end{DoxyCompactList}\item 
+\hyperlink{classEtatPauseA}{Etat\+Pause\+A} $\ast$ \hyperlink{classAudio_acef026681c15335e45892950223f9f32}{get\+Etat\+Pause} ()
+\begin{DoxyCompactList}\small\item\em Accesseur Etat\+Pause. \end{DoxyCompactList}\item 
+\hyperlink{classEtatArretA}{Etat\+Arret\+A} $\ast$ \hyperlink{classAudio_a38d8b4444ff8a9ccf04a5d97e1690718}{get\+Etat\+Arret} ()
+\begin{DoxyCompactList}\small\item\em Accesseur Etat\+Arret. \end{DoxyCompactList}\item 
+void \hyperlink{classAudio_a8b51ce7751d78af0f73c561940ccb3be}{set\+Etat} (\hyperlink{classEtatA}{Etat\+A} $\ast$ea)
+\begin{DoxyCompactList}\small\item\em Mutateur Etat. \end{DoxyCompactList}\item 
+\hypertarget{classAudio_a78fc68f0aff8192938eb49edfaa0e003}{void \hyperlink{classAudio_a78fc68f0aff8192938eb49edfaa0e003}{utiliser\+Bouton\+Lecture} (sf\+::\+Sound $\ast$sound)}\label{classAudio_a78fc68f0aff8192938eb49edfaa0e003}
+
+\begin{DoxyCompactList}\small\item\em selon l'état passe l'audio dans l'état lecture \end{DoxyCompactList}\item 
+\hypertarget{classAudio_a33bb2b93eea04897c9640022a8267418}{void \hyperlink{classAudio_a33bb2b93eea04897c9640022a8267418}{utiliser\+Bouton\+Stop} (sf\+::\+Sound $\ast$sound)}\label{classAudio_a33bb2b93eea04897c9640022a8267418}
+
+\begin{DoxyCompactList}\small\item\em selon l'etat, passe l'audio dans l'état arret \end{DoxyCompactList}\item 
+\hypertarget{classAudio_a4fc8d00c5a7b938a478f4999e2066c9c}{void \hyperlink{classAudio_a4fc8d00c5a7b938a478f4999e2066c9c}{utiliser\+Bouton\+Pause} (sf\+::\+Sound $\ast$sound)}\label{classAudio_a4fc8d00c5a7b938a478f4999e2066c9c}
+
+\begin{DoxyCompactList}\small\item\em selon l'etat, effectue l'action du bouttonpause \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 14 du fichier audio.\+hpp.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classAudio_acce28b8dbf321b14405f2ccd244dc4b5}{\index{Audio@{Audio}!Audio@{Audio}}
+\index{Audio@{Audio}!Audio@{Audio}}
+\subsubsection[{Audio}]{\setlength{\rightskip}{0pt plus 5cm}Audio\+::\+Audio (
+\begin{DoxyParamCaption}
+\item[{{\bf Audio\+Interface\+Factory} $\ast$}]{ai\+Fact}
+\end{DoxyParamCaption}
+)}}\label{classAudio_acce28b8dbf321b14405f2ccd244dc4b5}
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Audio\+Interface\+Factory$\ast$} & ai\+Fact \+: factory de l'interface audio \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classAudio_a38d8b4444ff8a9ccf04a5d97e1690718}{\index{Audio@{Audio}!get\+Etat\+Arret@{get\+Etat\+Arret}}
+\index{get\+Etat\+Arret@{get\+Etat\+Arret}!Audio@{Audio}}
+\subsubsection[{get\+Etat\+Arret}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat\+Arret\+A}$\ast$ Audio\+::get\+Etat\+Arret (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAudio_a38d8b4444ff8a9ccf04a5d97e1690718}
+
+
+Accesseur Etat\+Arret. 
+
+\begin{DoxyReturn}{Renvoie}
+Etat\+Arret\+A$\ast$ \+: pointeur sur l'état arret de l'audio 
+\end{DoxyReturn}
+\hypertarget{classAudio_abc78969597e0e29936687e5bd492afa5}{\index{Audio@{Audio}!get\+Etat\+Courant@{get\+Etat\+Courant}}
+\index{get\+Etat\+Courant@{get\+Etat\+Courant}!Audio@{Audio}}
+\subsubsection[{get\+Etat\+Courant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat\+A}$\ast$ Audio\+::get\+Etat\+Courant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAudio_abc78969597e0e29936687e5bd492afa5}
+
+
+Accesseur Etat\+Courant. 
+
+\begin{DoxyReturn}{Renvoie}
+\hyperlink{classEtatA}{Etat\+A} \+: l'état courant de l'audio 
+\end{DoxyReturn}
+\hypertarget{classAudio_a18a93b2599ee62c410a14d24616aa7ea}{\index{Audio@{Audio}!get\+Etat\+Lecture@{get\+Etat\+Lecture}}
+\index{get\+Etat\+Lecture@{get\+Etat\+Lecture}!Audio@{Audio}}
+\subsubsection[{get\+Etat\+Lecture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat\+Lecture\+A}$\ast$ Audio\+::get\+Etat\+Lecture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAudio_a18a93b2599ee62c410a14d24616aa7ea}
+
+
+Accesseur Etat\+Lecture. 
+
+\begin{DoxyReturn}{Renvoie}
+Etat\+Lecture\+A$\ast$ \+: pointeur sur l'état lecture de l'audio 
+\end{DoxyReturn}
+\hypertarget{classAudio_acef026681c15335e45892950223f9f32}{\index{Audio@{Audio}!get\+Etat\+Pause@{get\+Etat\+Pause}}
+\index{get\+Etat\+Pause@{get\+Etat\+Pause}!Audio@{Audio}}
+\subsubsection[{get\+Etat\+Pause}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat\+Pause\+A}$\ast$ Audio\+::get\+Etat\+Pause (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAudio_acef026681c15335e45892950223f9f32}
+
+
+Accesseur Etat\+Pause. 
+
+\begin{DoxyReturn}{Renvoie}
+Etat\+Pause\+A$\ast$ \+: pointeur sur l'état pause de l'audio 
+\end{DoxyReturn}
+\hypertarget{classAudio_a8b51ce7751d78af0f73c561940ccb3be}{\index{Audio@{Audio}!set\+Etat@{set\+Etat}}
+\index{set\+Etat@{set\+Etat}!Audio@{Audio}}
+\subsubsection[{set\+Etat}]{\setlength{\rightskip}{0pt plus 5cm}void Audio\+::set\+Etat (
+\begin{DoxyParamCaption}
+\item[{{\bf Etat\+A} $\ast$}]{ea}
+\end{DoxyParamCaption}
+)}}\label{classAudio_a8b51ce7751d78af0f73c561940ccb3be}
+
+
+Mutateur Etat. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \hyperlink{classEtatA}{Etat\+A}} & ea \+: le nouvel etat de l'audio \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/audio.\+hpp\end{DoxyCompactItemize}

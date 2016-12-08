@@ -1,0 +1,48 @@
+\hypertarget{classInterfaceFactory}{\section{Référence de la classe Interface\+Factory}
+\label{classInterfaceFactory}\index{Interface\+Factory@{Interface\+Factory}}
+}
+Graphe d'héritage de Interface\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classInterfaceFactory}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classInterface}{Interface} \hyperlink{classInterfaceFactory_a043c593647071e277c897a5416221de0}{create\+Interface} (\hyperlink{classButtons}{Buttons} $\ast$b, \hyperlink{classFormat}{Format} $\ast$f)=0
+\begin{DoxyCompactList}\small\item\em Crée l'interface adéquate selon le type de média. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 13 du fichier interface\+Factory.\+hpp.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classInterfaceFactory_a043c593647071e277c897a5416221de0}{\index{Interface\+Factory@{Interface\+Factory}!create\+Interface@{create\+Interface}}
+\index{create\+Interface@{create\+Interface}!Interface\+Factory@{Interface\+Factory}}
+\subsubsection[{create\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Interface} Interface\+Factory\+::create\+Interface (
+\begin{DoxyParamCaption}
+\item[{{\bf Buttons} $\ast$}]{b, }
+\item[{{\bf Format} $\ast$}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classInterfaceFactory_a043c593647071e277c897a5416221de0}
+
+
+Crée l'interface adéquate selon le type de média. 
+
+\begin{DoxyReturn}{Renvoie}
+Une \hyperlink{classInterface}{Interface} 
+\end{DoxyReturn}
+
+
+Implémenté dans \hyperlink{classAudioInterfaceFactory_ad5367033861d4aadd1ad0b0f5fa1caeb}{Audio\+Interface\+Factory}, \hyperlink{classImageInterfaceFactory_ace6a51fa023edcf9c99aee2a7e74ca5a}{Image\+Interface\+Factory}, et \hyperlink{classVideoInterfaceFactory_ac0470dfd9d2685893c62ec922496a9bf}{Video\+Interface\+Factory}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/\+Abstract\+Factory/\hyperlink{interfaceFactory_8hpp}{interface\+Factory.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+\hypertarget{classSubject}{\section{Référence de la classe Subject}
+\label{classSubject}\index{Subject@{Subject}}
+}
+Graphe d'héritage de Subject\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSubject}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classSubject_aecac0cb2c69c2d18db0e9433f580bde7}{add\+Obs} (\hyperlink{classObserver}{Observer} $\ast$o)=0
+\begin{DoxyCompactList}\small\item\em Ajout un \hyperlink{classObserver}{Observer}. Virtuel. \end{DoxyCompactList}\item 
+virtual int \hyperlink{classSubject_a4455d35d683c0005035121c7442b3a55}{remove\+Obs} (\hyperlink{classObserver}{Observer} $\ast$o)=0
+\begin{DoxyCompactList}\small\item\em Supprime un \hyperlink{classObserver}{Observer}. Virtuel. \end{DoxyCompactList}\item 
+\hypertarget{classSubject_a421d620f3f93365bfd57cd1e9165e501}{virtual void \hyperlink{classSubject_a421d620f3f93365bfd57cd1e9165e501}{notify\+Obs} ()=0}\label{classSubject_a421d620f3f93365bfd57cd1e9165e501}
+
+\begin{DoxyCompactList}\small\item\em Notifie l'ensemble des observers ajoutés à au vecteur. Virtuel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 14 du fichier Subject.\+hpp.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classSubject_aecac0cb2c69c2d18db0e9433f580bde7}{\index{Subject@{Subject}!add\+Obs@{add\+Obs}}
+\index{add\+Obs@{add\+Obs}!Subject@{Subject}}
+\subsubsection[{add\+Obs}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Subject\+::add\+Obs (
+\begin{DoxyParamCaption}
+\item[{{\bf Observer} $\ast$}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSubject_aecac0cb2c69c2d18db0e9433f580bde7}
+
+
+Ajout un \hyperlink{classObserver}{Observer}. Virtuel. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em l'observer} & à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\+\_\+retour 1 si l'observer a été ajouté 
+\end{DoxyReturn}
+
+
+Implémenté dans \hyperlink{classSubtitleSubject_afc89e947aab454357dce8ea2f80403ee}{Subtitle\+Subject}.
+
+\hypertarget{classSubject_a4455d35d683c0005035121c7442b3a55}{\index{Subject@{Subject}!remove\+Obs@{remove\+Obs}}
+\index{remove\+Obs@{remove\+Obs}!Subject@{Subject}}
+\subsubsection[{remove\+Obs}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Subject\+::remove\+Obs (
+\begin{DoxyParamCaption}
+\item[{{\bf Observer} $\ast$}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSubject_a4455d35d683c0005035121c7442b3a55}
+
+
+Supprime un \hyperlink{classObserver}{Observer}. Virtuel. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em l'observer} & à supprimer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\+\_\+retour 1 si l'observer a été trouvé et supprimé sinon -\/1 
+\end{DoxyReturn}
+
+
+Implémenté dans \hyperlink{classSubtitleSubject_a60e75a2a34275176aaea81738ee4879d}{Subtitle\+Subject}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/\+Observer/Subject.\+hpp\end{DoxyCompactItemize}

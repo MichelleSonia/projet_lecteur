@@ -1,0 +1,129 @@
+\hypertarget{classVideo}{\section{Référence de la classe Video}
+\label{classVideo}\index{Video@{Video}}
+}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVideo_a54f940a5f19f6bf69ea67fdf62ec8b9c}{Video} (\hyperlink{classVideoInterfaceFactory}{Video\+Interface\+Factory} $\ast$vi\+Fact)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hypertarget{classVideo_aebf7e2a8fa2bbd79335b1cf35925d190}{\hyperlink{classVideo_aebf7e2a8fa2bbd79335b1cf35925d190}{$\sim$\+Video} ()}\label{classVideo_aebf7e2a8fa2bbd79335b1cf35925d190}
+
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hypertarget{classVideo_a787b7cb0faa1c1879b8709247c1efff9}{void \hyperlink{classVideo_a787b7cb0faa1c1879b8709247c1efff9}{afficher} ()}\label{classVideo_a787b7cb0faa1c1879b8709247c1efff9}
+
+\begin{DoxyCompactList}\small\item\em fonction de test de création \end{DoxyCompactList}\item 
+\hypertarget{classVideo_a88d85260aae83f3a57c5ead9eda23b6b}{void \hyperlink{classVideo_a88d85260aae83f3a57c5ead9eda23b6b}{run} ()}\label{classVideo_a88d85260aae83f3a57c5ead9eda23b6b}
+
+\begin{DoxyCompactList}\small\item\em lance la vidéo et permet a l'utilisateur d'effectuer des actions dessus. \end{DoxyCompactList}\item 
+\hypertarget{classVideo_a5255a0a2f36b0152e9065743a54fadec}{\hyperlink{classEtatV}{Etat\+V} $\ast$ {\bfseries get\+Etat\+Courant} ()}\label{classVideo_a5255a0a2f36b0152e9065743a54fadec}
+
+\item 
+\hyperlink{classEtatLectureV}{Etat\+Lecture\+V} $\ast$ \hyperlink{classVideo_aee3ef41850206dac939f736e5b97c73c}{get\+Etat\+Lecture} ()
+\begin{DoxyCompactList}\small\item\em Accesseur Etat\+Lecture. \end{DoxyCompactList}\item 
+\hyperlink{classEtatPauseV}{Etat\+Pause\+V} $\ast$ \hyperlink{classVideo_a91f40f05211f5b45e772d8bf68de7562}{get\+Etat\+Pause} ()
+\begin{DoxyCompactList}\small\item\em Accesseur Etat\+Pause. \end{DoxyCompactList}\item 
+\hyperlink{classEtatArretV}{Etat\+Arret\+V} $\ast$ \hyperlink{classVideo_a84d7495527cd76e6347bf85b2ec6e0ab}{get\+Etat\+Arret} ()
+\begin{DoxyCompactList}\small\item\em Accesseur Etat\+Arret. \end{DoxyCompactList}\item 
+void \hyperlink{classVideo_a515d17189869141a80223055997179c5}{set\+Etat} (\hyperlink{classEtatV}{Etat\+V} $\ast$ev)
+\begin{DoxyCompactList}\small\item\em Mutateur Etat. \end{DoxyCompactList}\item 
+\hypertarget{classVideo_a8d3ea9525063ce97483e813e11ce4a6a}{void \hyperlink{classVideo_a8d3ea9525063ce97483e813e11ce4a6a}{utiliser\+Bouton\+Lecture} (sfe\+::\+Movie $\ast$movie)}\label{classVideo_a8d3ea9525063ce97483e813e11ce4a6a}
+
+\begin{DoxyCompactList}\small\item\em selon l'état passe la video dans l'état lecture \end{DoxyCompactList}\item 
+\hypertarget{classVideo_a93e76d0b95693e0000035e52775bd6d4}{void \hyperlink{classVideo_a93e76d0b95693e0000035e52775bd6d4}{utiliser\+Bouton\+Stop} (sfe\+::\+Movie $\ast$movie)}\label{classVideo_a93e76d0b95693e0000035e52775bd6d4}
+
+\begin{DoxyCompactList}\small\item\em selon l'etat, effectue l'action du bouttonstop \end{DoxyCompactList}\item 
+\hypertarget{classVideo_a78f816a4576618435c101756a96daea0}{void \hyperlink{classVideo_a78f816a4576618435c101756a96daea0}{utiliser\+Bouton\+Pause} (sfe\+::\+Movie $\ast$movie)}\label{classVideo_a78f816a4576618435c101756a96daea0}
+
+\begin{DoxyCompactList}\small\item\em selon l'etat, effectue l'action du bouttonpause \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 10 du fichier video.\+hpp.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classVideo_a54f940a5f19f6bf69ea67fdf62ec8b9c}{\index{Video@{Video}!Video@{Video}}
+\index{Video@{Video}!Video@{Video}}
+\subsubsection[{Video}]{\setlength{\rightskip}{0pt plus 5cm}Video\+::\+Video (
+\begin{DoxyParamCaption}
+\item[{{\bf Video\+Interface\+Factory} $\ast$}]{vi\+Fact}
+\end{DoxyParamCaption}
+)}}\label{classVideo_a54f940a5f19f6bf69ea67fdf62ec8b9c}
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Video\+Interface\+Factory$\ast$} & vi\+Fact \+: factory de l'interface video \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classVideo_a84d7495527cd76e6347bf85b2ec6e0ab}{\index{Video@{Video}!get\+Etat\+Arret@{get\+Etat\+Arret}}
+\index{get\+Etat\+Arret@{get\+Etat\+Arret}!Video@{Video}}
+\subsubsection[{get\+Etat\+Arret}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat\+Arret\+V}$\ast$ Video\+::get\+Etat\+Arret (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classVideo_a84d7495527cd76e6347bf85b2ec6e0ab}
+
+
+Accesseur Etat\+Arret. 
+
+\begin{DoxyReturn}{Renvoie}
+\hyperlink{classEtatArretV}{Etat\+Arret\+V} \+: pointeur sur l'état arret de la video 
+\end{DoxyReturn}
+\hypertarget{classVideo_aee3ef41850206dac939f736e5b97c73c}{\index{Video@{Video}!get\+Etat\+Lecture@{get\+Etat\+Lecture}}
+\index{get\+Etat\+Lecture@{get\+Etat\+Lecture}!Video@{Video}}
+\subsubsection[{get\+Etat\+Lecture}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat\+Lecture\+V}$\ast$ Video\+::get\+Etat\+Lecture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classVideo_aee3ef41850206dac939f736e5b97c73c}
+
+
+Accesseur Etat\+Lecture. 
+
+\begin{DoxyReturn}{Renvoie}
+Etat\+Lecture\+V\+A$\ast$ \+: pointeur sur l'état lecture de la vidéo 
+\end{DoxyReturn}
+\hypertarget{classVideo_a91f40f05211f5b45e772d8bf68de7562}{\index{Video@{Video}!get\+Etat\+Pause@{get\+Etat\+Pause}}
+\index{get\+Etat\+Pause@{get\+Etat\+Pause}!Video@{Video}}
+\subsubsection[{get\+Etat\+Pause}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Etat\+Pause\+V}$\ast$ Video\+::get\+Etat\+Pause (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classVideo_a91f40f05211f5b45e772d8bf68de7562}
+
+
+Accesseur Etat\+Pause. 
+
+\begin{DoxyReturn}{Renvoie}
+Etat\+Pause\+V$\ast$ \+: pointeur sur l'état pause de la vidéo 
+\end{DoxyReturn}
+\hypertarget{classVideo_a515d17189869141a80223055997179c5}{\index{Video@{Video}!set\+Etat@{set\+Etat}}
+\index{set\+Etat@{set\+Etat}!Video@{Video}}
+\subsubsection[{set\+Etat}]{\setlength{\rightskip}{0pt plus 5cm}void Video\+::set\+Etat (
+\begin{DoxyParamCaption}
+\item[{{\bf Etat\+V} $\ast$}]{ev}
+\end{DoxyParamCaption}
+)}}\label{classVideo_a515d17189869141a80223055997179c5}
+
+
+Mutateur Etat. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \hyperlink{classEtatV}{Etat\+V}} & ev \+: le nouvel etat de l'audio \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/video.\+hpp\end{DoxyCompactItemize}

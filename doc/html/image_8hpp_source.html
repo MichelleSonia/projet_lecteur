@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Projet Lecteur Multimedia:  Fichier source de src/image.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Projet Lecteur Multimedia
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">image.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imageInterfaceFactory_8hpp.html">AbstractFactory/imageInterfaceFactory.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Dir_8hpp.html">Dir/Dir.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="classImage.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="classImage.html">Image</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <a class="code" href="classInterface.html">Interface</a> _i;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <a class="code" href="classDir.html">Dir</a> _dir;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="comment">//...</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classImage.html#a2e8f8d5193e5c6e49de276f9d1f4bdde">Image</a>(<a class="code" href="classImageInterfaceFactory.html">ImageInterfaceFactory</a>* iiFact);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classImage.html#a0294f63700543e11c0f0da85601c7ae5">~Image</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classImage.html#a4d957034ad17e3911a4d9f7decdda22c">afficher</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classImage.html#a0ee0602472090d8723d081849dfe6e27">run</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="ttc" id="imageInterfaceFactory_8hpp_html"><div class="ttname"><a href="imageInterfaceFactory_8hpp.html">imageInterfaceFactory.hpp</a></div><div class="ttdoc">Classe ImageInterfaceFactory, utilisé pour la création de l&#39;interface lors de la lecture d&#39;un fichier...</div></div>
+<div class="ttc" id="classImage_html_a0294f63700543e11c0f0da85601c7ae5"><div class="ttname"><a href="classImage.html#a0294f63700543e11c0f0da85601c7ae5">Image::~Image</a></div><div class="ttdeci">~Image()</div><div class="ttdoc">Destructeur. </div></div>
+<div class="ttc" id="classImage_html_a4d957034ad17e3911a4d9f7decdda22c"><div class="ttname"><a href="classImage.html#a4d957034ad17e3911a4d9f7decdda22c">Image::afficher</a></div><div class="ttdeci">void afficher()</div><div class="ttdoc">fonction de test de création </div></div>
+<div class="ttc" id="classImage_html_a0ee0602472090d8723d081849dfe6e27"><div class="ttname"><a href="classImage.html#a0ee0602472090d8723d081849dfe6e27">Image::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">lance l&#39;image et permet a l&#39;utilisateur d&#39;effectuer des actions dessus. </div></div>
+<div class="ttc" id="classImage_html_a2e8f8d5193e5c6e49de276f9d1f4bdde"><div class="ttname"><a href="classImage.html#a2e8f8d5193e5c6e49de276f9d1f4bdde">Image::Image</a></div><div class="ttdeci">Image(ImageInterfaceFactory *iiFact)</div><div class="ttdoc">Constructeur. </div></div>
+<div class="ttc" id="classInterface_html"><div class="ttname"><a href="classInterface.html">Interface</a></div><div class="ttdef"><b>Definition:</b> <a href="interface_8hpp_source.html#l00017">interface.hpp:17</a></div></div>
+<div class="ttc" id="classDir_html"><div class="ttname"><a href="classDir.html">Dir</a></div><div class="ttdef"><b>Definition:</b> <a href="Dir_8hpp_source.html#l00017">Dir.hpp:17</a></div></div>
+<div class="ttc" id="classImage_html"><div class="ttname"><a href="classImage.html">Image</a></div><div class="ttdef"><b>Definition:</b> <a href="image_8hpp_source.html#l00004">image.hpp:4</a></div></div>
+<div class="ttc" id="classImageInterfaceFactory_html"><div class="ttname"><a href="classImageInterfaceFactory.html">ImageInterfaceFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="imageInterfaceFactory_8hpp_source.html#l00016">imageInterfaceFactory.hpp:16</a></div></div>
+<div class="ttc" id="Dir_8hpp_html"><div class="ttname"><a href="Dir_8hpp.html">Dir.hpp</a></div><div class="ttdoc">Classe Dir , contenant les méthodes pour acceder aux fichiers d&#39;un dossier et les stockants...</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Vendredi 27 Novembre 2015 16:25:54 pour Projet Lecteur Multimedia par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

@@ -1,0 +1,195 @@
+\hypertarget{classSubtitleSubject}{\section{Référence de la classe Subtitle\+Subject}
+\label{classSubtitleSubject}\index{Subtitle\+Subject@{Subtitle\+Subject}}
+}
+Graphe d'héritage de Subtitle\+Subject\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSubtitleSubject}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSubtitleSubject_af4cc18f5f05474102ec8ee78649fa42c}{Subtitle\+Subject} (sfe\+::\+Movie $\ast$m)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classSubtitleSubject_afcb35a1af34b6b926860d544893ae3c4}{get\+Data} ()
+\begin{DoxyCompactList}\small\item\em Accesseur. \end{DoxyCompactList}\item 
+void \hyperlink{classSubtitleSubject_aa6b5f86666e26cb2ed6e3a282f7d9ded}{set\+Data} (std\+::string l)
+\begin{DoxyCompactList}\small\item\em Accesseur mettant à jour modifiant la data. \end{DoxyCompactList}\item 
+int \hyperlink{classSubtitleSubject_afc89e947aab454357dce8ea2f80403ee}{add\+Obs} (\hyperlink{classObserver}{Observer} $\ast$o)
+\begin{DoxyCompactList}\small\item\em Ajout un \hyperlink{classObserver}{Observer}. \end{DoxyCompactList}\item 
+int \hyperlink{classSubtitleSubject_a60e75a2a34275176aaea81738ee4879d}{remove\+Obs} (\hyperlink{classObserver}{Observer} $\ast$o)
+\begin{DoxyCompactList}\small\item\em Supprime un \hyperlink{classObserver}{Observer}. \end{DoxyCompactList}\item 
+\hypertarget{classSubtitleSubject_a25a62553e49435e7ff42ded01d825b52}{void \hyperlink{classSubtitleSubject_a25a62553e49435e7ff42ded01d825b52}{notify\+Obs} ()}\label{classSubtitleSubject_a25a62553e49435e7ff42ded01d825b52}
+
+\begin{DoxyCompactList}\small\item\em Notifie l'ensemble des observers ajoutés à au vecteur. \end{DoxyCompactList}\item 
+void \hyperlink{classSubtitleSubject_acd31f06174b7b2a984c9b20566d412b8}{float\+To\+String} (float i)
+\begin{DoxyCompactList}\small\item\em Transforme un float en String. \end{DoxyCompactList}\item 
+float \hyperlink{classSubtitleSubject_a2d774cd5676e57a53b1f9927de5b9b48}{string\+To\+Float} (std\+::string t)
+\begin{DoxyCompactList}\small\item\em Modifie un string en float. \end{DoxyCompactList}\item 
+bool \hyperlink{classSubtitleSubject_a4a3626c6f2d2f4d4ca6275db6355d1fa}{is\+Digit} (std\+::string s)
+\begin{DoxyCompactList}\small\item\em Test si une chaine de caractère ne contient que des chiffres. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 16 du fichier Subtitle\+Subject.\+hpp.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classSubtitleSubject_af4cc18f5f05474102ec8ee78649fa42c}{\index{Subtitle\+Subject@{Subtitle\+Subject}!Subtitle\+Subject@{Subtitle\+Subject}}
+\index{Subtitle\+Subject@{Subtitle\+Subject}!Subtitle\+Subject@{Subtitle\+Subject}}
+\subsubsection[{Subtitle\+Subject}]{\setlength{\rightskip}{0pt plus 5cm}Subtitle\+Subject\+::\+Subtitle\+Subject (
+\begin{DoxyParamCaption}
+\item[{sfe\+::\+Movie $\ast$}]{m}
+\end{DoxyParamCaption}
+)}}\label{classSubtitleSubject_af4cc18f5f05474102ec8ee78649fa42c}
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em sfe\+::\+Movie} & $\ast$m \+: pointeur vers sfe\+::\+Movie \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classSubtitleSubject_afc89e947aab454357dce8ea2f80403ee}{\index{Subtitle\+Subject@{Subtitle\+Subject}!add\+Obs@{add\+Obs}}
+\index{add\+Obs@{add\+Obs}!Subtitle\+Subject@{Subtitle\+Subject}}
+\subsubsection[{add\+Obs}]{\setlength{\rightskip}{0pt plus 5cm}int Subtitle\+Subject\+::add\+Obs (
+\begin{DoxyParamCaption}
+\item[{{\bf Observer} $\ast$}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSubtitleSubject_afc89e947aab454357dce8ea2f80403ee}
+
+
+Ajout un \hyperlink{classObserver}{Observer}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em l'observer} & à ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\+\_\+retour 1 si l'observer a été ajouté 
+\end{DoxyReturn}
+
+
+Implémente \hyperlink{classSubject_aecac0cb2c69c2d18db0e9433f580bde7}{Subject}.
+
+\hypertarget{classSubtitleSubject_acd31f06174b7b2a984c9b20566d412b8}{\index{Subtitle\+Subject@{Subtitle\+Subject}!float\+To\+String@{float\+To\+String}}
+\index{float\+To\+String@{float\+To\+String}!Subtitle\+Subject@{Subtitle\+Subject}}
+\subsubsection[{float\+To\+String}]{\setlength{\rightskip}{0pt plus 5cm}void Subtitle\+Subject\+::float\+To\+String (
+\begin{DoxyParamCaption}
+\item[{float}]{i}
+\end{DoxyParamCaption}
+)}}\label{classSubtitleSubject_acd31f06174b7b2a984c9b20566d412b8}
+
+
+Transforme un float en String. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em le} & float a modifier \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSubtitleSubject_afcb35a1af34b6b926860d544893ae3c4}{\index{Subtitle\+Subject@{Subtitle\+Subject}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Subtitle\+Subject@{Subtitle\+Subject}}
+\subsubsection[{get\+Data}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Subtitle\+Subject\+::get\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSubtitleSubject_afcb35a1af34b6b926860d544893ae3c4}
+
+
+Accesseur. 
+
+\begin{DoxyReturn}{Renvoie}
+\+\_\+retour la dernière donnée retirée du fichier en format txt. 
+\end{DoxyReturn}
+\hypertarget{classSubtitleSubject_a4a3626c6f2d2f4d4ca6275db6355d1fa}{\index{Subtitle\+Subject@{Subtitle\+Subject}!is\+Digit@{is\+Digit}}
+\index{is\+Digit@{is\+Digit}!Subtitle\+Subject@{Subtitle\+Subject}}
+\subsubsection[{is\+Digit}]{\setlength{\rightskip}{0pt plus 5cm}bool Subtitle\+Subject\+::is\+Digit (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{s}
+\end{DoxyParamCaption}
+)}}\label{classSubtitleSubject_a4a3626c6f2d2f4d4ca6275db6355d1fa}
+
+
+Test si une chaine de caractère ne contient que des chiffres. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em la} & chaine de caracteres a tester \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\+\_\+retour retourne 1 si vraie sinon 0 
+\end{DoxyReturn}
+\hypertarget{classSubtitleSubject_a60e75a2a34275176aaea81738ee4879d}{\index{Subtitle\+Subject@{Subtitle\+Subject}!remove\+Obs@{remove\+Obs}}
+\index{remove\+Obs@{remove\+Obs}!Subtitle\+Subject@{Subtitle\+Subject}}
+\subsubsection[{remove\+Obs}]{\setlength{\rightskip}{0pt plus 5cm}int Subtitle\+Subject\+::remove\+Obs (
+\begin{DoxyParamCaption}
+\item[{{\bf Observer} $\ast$}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSubtitleSubject_a60e75a2a34275176aaea81738ee4879d}
+
+
+Supprime un \hyperlink{classObserver}{Observer}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em l'observer} & à supprimer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\+\_\+retour 1 si l'observer a été trouvé et supprimé sinon -\/1 
+\end{DoxyReturn}
+
+
+Implémente \hyperlink{classSubject_a4455d35d683c0005035121c7442b3a55}{Subject}.
+
+\hypertarget{classSubtitleSubject_aa6b5f86666e26cb2ed6e3a282f7d9ded}{\index{Subtitle\+Subject@{Subtitle\+Subject}!set\+Data@{set\+Data}}
+\index{set\+Data@{set\+Data}!Subtitle\+Subject@{Subtitle\+Subject}}
+\subsubsection[{set\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void Subtitle\+Subject\+::set\+Data (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{l}
+\end{DoxyParamCaption}
+)}}\label{classSubtitleSubject_aa6b5f86666e26cb2ed6e3a282f7d9ded}
+
+
+Accesseur mettant à jour modifiant la data. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em la} & nouvelle data \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSubtitleSubject_a2d774cd5676e57a53b1f9927de5b9b48}{\index{Subtitle\+Subject@{Subtitle\+Subject}!string\+To\+Float@{string\+To\+Float}}
+\index{string\+To\+Float@{string\+To\+Float}!Subtitle\+Subject@{Subtitle\+Subject}}
+\subsubsection[{string\+To\+Float}]{\setlength{\rightskip}{0pt plus 5cm}float Subtitle\+Subject\+::string\+To\+Float (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{t}
+\end{DoxyParamCaption}
+)}}\label{classSubtitleSubject_a2d774cd5676e57a53b1f9927de5b9b48}
+
+
+Modifie un string en float. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em la} & chaine de caractere a modifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\+\_\+retour retourne le float 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/\+Observer/\hyperlink{SubtitleSubject_8hpp}{Subtitle\+Subject.\+hpp}\end{DoxyCompactItemize}
